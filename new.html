@@ -12,18 +12,19 @@
 
   <body>
     <div id="root"></div>
-    
+      <h3>Categories</h3>
+      <p id="demo"></p>
+     <p id="clk"></p>
  
- 
-<form action="newsample.json" method="GET" class="demoForm" id="category1">
+<!---<form action="" method="GET" class="demoForm" id="category1">
     <fieldset>
         
       <br><br>
     <p>Categories<br>
-        <label><input type="radio" name="category" value="All" onclick=getRadioVal(category1,category)/>All</label><br>
-        <label><input type="radio" name="category" value="Computer" checked="checked"  onclick=getRadioVal(category1,category)/> Computer</label><br>
-        <label><input type="radio" name="category" value="Engineering" onclick=getRadioVal(category1,category)/> Engineering</label><br>
-         <label><input type="radio" name="category" value="Mathematics" onclick=getRadioVal(category1,category)/>Mathematics</label>
+        <!--<label><input type="radio" name="data"  onclick=getRadioVal()/>All</label><br>
+        <label><input type="radio" name="data" checked="checked"  onclick=getRadioVal()/> Computer</label><br>
+        <label><input type="radio" name="data" onclick=getRadioVal()/> Engineering</label><br>
+         <label><input type="radio" name="data"  onclick=getRadioVal()/>Mathematics</label>
             
     </p>
     
@@ -31,13 +32,13 @@
         <button><input type="button" name="getVal"></button>
     </p>
     </fieldset>
-</form>
+</form>-->
 <script src="news.js">
     
-var val = getRadioVal(document.getElementById('category1'),'category');
+/*var val = getRadioVal(document.getElementById('category1'),'data');
    alert(val);
-document.getElementById('category1').onclick= function(){
-          var val = getRadioVal(this, 'category');
+document.getElementById('category1').onload= function(){
+          var val = getRadioVal(this, 'data');
           alert(val) ;
 }  
 function getRadioVal(form,name) {
@@ -51,7 +52,7 @@ function getRadioVal(form,name) {
      }
    return val;
 
-}
+}*/
 
 
 
