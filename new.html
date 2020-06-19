@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ghibli App</title>
+    <title> App</title>
 
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
     <link href="newstyle.css" rel="stylesheet" />
@@ -12,47 +12,15 @@
 
   <body>
     <div id="root"></div>
+
+ <input type="search" id="myInput" onkeyup="myFunction1()" placeholder="filter for courses" title="Type in a name">
       <h3>Categories</h3>
-      <p id="demo"></p>
-     <p id="clk"></p>
- 
-<!---<form action="" method="GET" class="demoForm" id="category1">
-    <fieldset>
-        
-      <br><br>
-    <p>Categories<br>
-        <!--<label><input type="radio" name="data"  onclick=getRadioVal()/>All</label><br>
-        <label><input type="radio" name="data" checked="checked"  onclick=getRadioVal()/> Computer</label><br>
-        <label><input type="radio" name="data" onclick=getRadioVal()/> Engineering</label><br>
-         <label><input type="radio" name="data"  onclick=getRadioVal()/>Mathematics</label>
-            
-    </p>
-    
-    <p>
-        <button><input type="button" name="getVal"></button>
-    </p>
-    </fieldset>
-</form>-->
+      <div id="demo"></div>
+     <div id="clk"></div>
+     
+
 <script src="news.js">
     
-/*var val = getRadioVal(document.getElementById('category1'),'data');
-   alert(val);
-document.getElementById('category1').onload= function(){
-          var val = getRadioVal(this, 'data');
-          alert(val) ;
-}  
-function getRadioVal(form,name) {
-          var val;
-          var radios = forms.elements[name];
-      for (var i=0, len=radios.length; i<len; i++){
-           if(radios[i].checked){
-                 val = radios[i].value;
-                 break;
-        }
-     }
-   return val;
-
-}*/
 
 
 
@@ -61,15 +29,8 @@ function getRadioVal(form,name) {
 
 
 
-/*var sz = document.forms['demoForm'].elements['category'];
 
-// loop through list
-for (var i=0, len=sz.length; i<len; i++) {
-    sz[i].onclick = function() { // assign onclick handler function to each
-        // put clicked radio button's value in total field
-       this.form.elements.total.value = this.value;
-    };
-}*/
+
 </script>
   </body>
 </html>

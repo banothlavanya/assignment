@@ -1,0 +1,104 @@
+{
+ "data": [
+  {
+    "title": "Course1",
+    "instructor_name": "Hello C",
+     "description" : "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+    "title1" : "Pre-Registration",
+    "start_date": "March 18 -",
+    "end_date":"August 19",
+    "course_duration":"22 weeks course ,",
+    "estimated_workload":"4 hrs per day",
+    "category" : "All",
+    "url": "https://frontend-hiring.appspot.com/all_courses/1"
+  },
+  {
+    "title": "Course2",
+    "instructor_name" : "Prof A",
+    "description": "In the latter part of World War II, a boy and his sister, orphaned when their mother is killed in the firebombing of Tokyo, are left to survive on their own in what remains of civilian life in Japan. The plot follows this boy and his sister as they do their best to survive in the Japanese countryside, battling hunger, prejudice, and pride in their own quiet, personal battle.",
+    "title1" : "Pre-Registration",
+    "start_date": "August 18 -",
+    "end_date":"January 19",
+    "course_duration":"23 weeks course ,",
+    "estimated_workload":"5 hrs per day",
+     "category" : "Computer",
+"url": "https://frontend-hiring.appspot.com/all_courses/2"
+  },
+  {
+    "title": "Course3",
+    "instructor_name": "Prof B",
+     "description" : "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+    "title1" : "Pre-Registration",
+    "start_date": "March 18 -",
+    "end_date":"August 19",
+    "course_duration":"22 weeks course ,",
+    "estimated_workload":"4 hrs per day",
+     "category" : "Engineering",
+    "url": "https://frontend-hiring.appspot.com/all_courses/3"
+  },
+   {
+    "title": "Course4-Hello world",
+    "instructor_name": "Prof c",
+     "description" : "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+     "title1" : "Pre-Registration",
+    "start_date": "March 18 -",
+    "end_date": "August 19 ",
+    "course_duration":"22 weeks course ,",
+    "estimated_workload":"4 hrs per day",
+    "category" : "Mathematics",
+    "url": "https://frontend-hiring.appspot.com/all_courses/4"
+  },
+   {
+    "title": "Course5",
+    "instructor_name": "Prof D",
+     "description" : "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+    "title1" : "Pre-Registration",
+    "start_date": "March 18 -",
+    "end_date":"August 19",
+    "course_duration":"22 weeks course ,",
+    "estimated_workload":"4 hrs per day",
+    "category" : "All",
+    "url": "https://frontend-hiring.appspot.com/all_courses/5"
+  },
+{
+   
+    "title": "Course6",
+    "instructor_name": "Prof C",
+     "description" : "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+    "title1" : "Pre-Registration",
+    "start_date": "March 18 -",
+    "end_date":"August 19",
+    "course_duration":"22 weeks course ,",
+    "estimated_workload":"4 hrs per day",
+    "category" : "Engineering",
+    "url": "https://frontend-hiring.appspot.com/all_courses/6"
+  },
+{
+    "title": "Course7",
+    "instructor_name": "Prof D",
+     "description" : "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+    "title1" : "Pre-Registration",
+    "start_date": "March 18 -",
+    "end_date":"August 19",
+    "course_duration":"22 weeks course ,",
+    "estimated_workload":"4 hrs per day",
+    "category" : "Computer",
+    "url": "https://frontend-hiring.appspot.com/all_courses/5"
+  },
+{
+   
+    "title": "Course8",
+    "instructor_name": "Prof A",
+     "description" : "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+    "title1" : "Pre-Registration",
+    "start_date": "March 18 -",
+    "end_date":"August 19",
+    "course_duration":"22 weeks course ,",
+    "estimated_workload":"4 hrs per day",
+    "category" : "Mathematics",
+    "url": "https://frontend-hiring.appspot.com/all_courses/6"
+  }
+
+]}
+
+
