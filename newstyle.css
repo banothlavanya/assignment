@@ -11,10 +11,19 @@ html {
   background: #F6F6F6;
 }
 
+
 #root {
   max-width: 1000px;
   margin: 0 auto;
   float : right;
+}
+
+.topnav {
+  position:relative;
+  left: 500px;
+  width: 50%;
+  overflow: hidden;
+  background-color: #e9e9e9;
 }
 .dot {
  
