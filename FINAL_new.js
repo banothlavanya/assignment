@@ -1,3 +1,6 @@
+function weeksBetween(d1, d2) {
+    return Math.round((d2 - d1) / (7 * 24 * 60 * 60 * 1000));
+}
 const app = document.getElementById('root');
 
 const container = document.createElement('div');
@@ -8,19 +11,23 @@ app.appendChild(container);
 var totalCategories = 0;
 
 var request = new XMLHttpRequest();
-request.open('GET', 'newdata.json', true);
+request.open('GET', 'all_categories.json', true);
 request.onload = function Retrive () {
   // Begin accessing JSON data here
   var myObj = JSON.parse(this.response);
  
   var x=' ';
   if (request.status >= 200 && request.status < 400) {
-    
-    for (i in myObj.Radio){
-     
-      x += '<br>'+'<label><input type="radio" name="Category" id = "cat'+ totalCategories +'" onclick="searchbar()" value="' + myObj.Radio[i].category +'"/>'+ myObj.Radio[i].category +'</label> '+ "<br>";
+   
+    var a= eval(myObj.payload);
+    a.unshift("All");
+    console.log(a);
+    for (i in a){
+     console.log(a[i]);
+      x += '<br>'+'<label><input type="radio" name="Category" id = "cat'+ totalCategories +'" onclick="searchbar()" value="' + a[i]+'"/>'+ a[i]+'</label> '+ "<br>";
       totalCategories++;
     }
+    console.log(myObj.payload);
     document.getElementById("demo").innerHTML = x;
   }
 };
@@ -38,16 +45,22 @@ function searchbar() {
   console.log("category is = " + category);
 
   var request1 = new XMLHttpRequest();
-  request1.open('GET', 'data1.json', true);
+  request1.open('GET', 'all_courses.json', true);
   request1.onload = function  () {
+    var openCourses = 0;  
     // Begin accessing JSON data here
     var Courses = JSON.parse(this.response);
     if (request1.status >= 200 && request1.status < 400){
       container.querySelectorAll('*').forEach(n => n.remove());
-      Courses.data.forEach(course => {
-        var instructor_name_array = course.instructor_name.split(" ");
-        var title_array = course.title.split(" ");
-        if((instructor_name_array.includes(searchQuery) || title_array.includes(searchQuery) || searchQuery == "")
+      Courses.payload = eval(Courses.payload);
+      Courses.payload.forEach(course => {
+        if((course.description.toLowerCase().includes(searchQuery.toLowerCase())||
+          course.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          course.instructor_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          course.start_date.toLowerCase().includes(searchQuery.toLowerCase())||
+          course.end_date.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          course.estimated_workload.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          searchQuery == "")
         && (category == "All" || course.category == category)) {
           const card = document.createElement('div');
           card.setAttribute('class', 'card');
@@ -72,10 +85,47 @@ function searchbar() {
           const calendar = document.createElement('img');
           calendar.src = 'calendar.png';
          
-          const h5 = document.createElement('h5');
-          course.textContent = course.title1.substring(2, 300);
-          h5.textContent = `${course.title1}`;
+          var today = new Date();
+          var dd = String(today.getDate()).padStart(2, '0');
+          var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+          var yyyy = today.getFullYear();
 
+          //today = dd + '/' + mm + '/' + yyyy;
+          //console.log(String(today))
+
+          var startdate=course.start_date.split("-");
+          var enddate=course.end_date.split("-");
+          console.log(parseInt(startdate[2]))
+          console.log(parseInt(enddate[2]))
+         
+          var start_date = new Date(parseInt(startdate[0]),(parseInt(startdate[1]))-1,parseInt(startdate[2]));
+          var end_date = new Date(parseInt(enddate[0]),(parseInt(enddate[1]))-1,parseInt(enddate[2]));
+          console.log(String(end_date))
+          console.log(String(start_date))
+          //console.log(String(today))
+         
+          const h5 = document.createElement('h5');
+          //course.textContent = course.title1.substring(2, 300);
+          console.log(today.getTime() > end_date.getTime())
+          if(today.getTime() < start_date.getTime())
+          {
+            h5.textContent = 'Pre-registration';
+            openCourses++;
+          }
+
+          else if(today.getTime()>start_date.getTime() && today.getTime()< end_date.getTime())
+          {
+            h5.textContent = 'Course Ongoing';
+         
+          }
+
+          else if(today.getTime() > end_date.getTime())
+          {
+            h5.textContent = 'Course completed';
+         
+          }
+         
+         
           const h51 = document.createElement('h51');
           course.textContent = course.start_date.substring(3, 300);
           h51.textContent = `${course.start_date}`;
@@ -85,9 +135,8 @@ function searchbar() {
           h52.textContent = `${course.end_date}`;
 
           const h53 = document.createElement('h53');
-          course.textContent = course.course_duration.substring(5, 300);
-          h53.textContent = `${course.course_duration}`;
-       
+          //course.textContent = course.course_duration.substring(5, 300);
+          h53.textContent = weeksBetween(start_date, end_date).toString() + " weeks, ";
           const h54 = document.createElement('h54');
           course.textContent = course.estimated_workload.substring(6, 300);
           h54.textContent = `${course.estimated_workload}`;
@@ -106,6 +155,7 @@ function searchbar() {
           card.appendChild(h54);
         }
       });
+      document.getElementById("app").innerHTML = openCourses.toString() + " courses open for registration";
     }
     else {
       const errorMessage = document.createElement('marquee');
