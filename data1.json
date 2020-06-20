@@ -10,7 +10,7 @@
     "course_duration":"22 weeks course ,",
     "estimated_workload":"4 hrs per day",
     "category" : "All",
-    "url": "https://frontend-hiring.appspot.com/all_courses/1"
+    "url": "https://frontend-hiring.appspot.com/all_courses?secret=HelloMars/1"
   },
   {
     "title": "Course2",
@@ -22,7 +22,7 @@
     "course_duration":"23 weeks course ,",
     "estimated_workload":"5 hrs per day",
      "category" : "Computer",
-"url": "https://frontend-hiring.appspot.com/all_courses/2"
+"url": "https://frontend-hiring.appspot.com/all_courses?secret=HelloMars/2"
   },
   {
     "title": "Course3",
@@ -34,7 +34,7 @@
     "course_duration":"22 weeks course ,",
     "estimated_workload":"4 hrs per day",
      "category" : "Engineering",
-    "url": "https://frontend-hiring.appspot.com/all_courses/3"
+    "url": "https://frontend-hiring.appspot.com/all_courses?secret=HelloMars/3"
   },
    {
     "title": "Course4-Hello world",
@@ -45,8 +45,8 @@
     "end_date": "August 19 ",
     "course_duration":"22 weeks course ,",
     "estimated_workload":"4 hrs per day",
-    "category" : "Mathematics",
-    "url": "https://frontend-hiring.appspot.com/all_courses/4"
+    "category" : "Computer",
+    "url": "https://frontend-hiring.appspot.com/all_courses?secret=HelloMars/4"
   },
    {
     "title": "Course5",
@@ -58,7 +58,7 @@
     "course_duration":"22 weeks course ,",
     "estimated_workload":"4 hrs per day",
     "category" : "All",
-    "url": "https://frontend-hiring.appspot.com/all_courses/5"
+    "url": "https://frontend-hiring.appspot.com/all_courses?secret=HelloMars/5"
   },
 {
    
@@ -71,7 +71,7 @@
     "course_duration":"22 weeks course ,",
     "estimated_workload":"4 hrs per day",
     "category" : "Engineering",
-    "url": "https://frontend-hiring.appspot.com/all_courses/6"
+    "url": "https://frontend-hiring.appspot.com/all_courses?secret=HelloMars/6"
   },
 {
     "title": "Course7",
@@ -82,8 +82,8 @@
     "end_date":"August 19",
     "course_duration":"22 weeks course ,",
     "estimated_workload":"4 hrs per day",
-    "category" : "Computer",
-    "url": "https://frontend-hiring.appspot.com/all_courses/5"
+    "category" : "Mathematics",
+    "url": "https://frontend-hiring.appspot.com/all_courses?secret=HelloMars/7"
   },
 {
    
@@ -96,7 +96,7 @@
     "course_duration":"22 weeks course ,",
     "estimated_workload":"4 hrs per day",
     "category" : "Mathematics",
-    "url": "https://frontend-hiring.appspot.com/all_courses/6"
+    "url": "https://frontend-hiring.appspot.com/all_courses?secret=HelloMars/8"
   }
 
 ]}

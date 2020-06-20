@@ -6,14 +6,18 @@ container.setAttribute('class', 'container');
 //app.appendChild(logo);
 app.appendChild(container);
 var totalCategories = 0;
+
 var request = new XMLHttpRequest();
 request.open('GET', 'newdata.json', true);
 request.onload = function Retrive () {
   // Begin accessing JSON data here
   var myObj = JSON.parse(this.response);
+ 
   var x=' ';
   if (request.status >= 200 && request.status < 400) {
+    
     for (i in myObj.Radio){
+     
       x += '<br>'+'<label><input type="radio" name="Category" id = "cat'+ totalCategories +'" onclick="searchbar()" value="' + myObj.Radio[i].category +'"/>'+ myObj.Radio[i].category +'</label> '+ "<br>";
       totalCategories++;
     }
@@ -152,3 +156,5 @@ xmlht.onreadystatechange = function () {
 xmlht.open("GET", "u1.json", true);
 xmlht.send();
 }*/
+
+

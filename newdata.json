@@ -1,20 +1,20 @@
 { 
 "Radio":[
   {
-    "category": "All"
-    
+    "category": "All",
+     "url": "https://frontend-hiring.appspot.com/all_categories?secret=HelloMars/5"
   },
   {
-    "category": "Computer"
-    
+    "category": "Computer",
+     "url": "https://frontend-hiring.appspot.com/all_categories?secret=HelloMars/5"
   },
   {
-    "category": "Engineering"
-   
+    "category": "Engineering",
+   "url": "https://frontend-hiring.appspot.com/all_categories?secret=HelloMars/5"
   },
   {
-    "category": "Mathematics"
-    
+    "category": "Mathematics",
+    "url": "https://frontend-hiring.appspot.com/all_categories?secret=HelloMars/5"
   }
  
 ]
