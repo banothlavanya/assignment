@@ -4,6 +4,4 @@ WEB PAGE TO DISPLAY ALL AVAILBLE COURSES:
 
 steps to Run:
      Run new.html in the Browser
-     git add
-     git commit
-     git push
+    
